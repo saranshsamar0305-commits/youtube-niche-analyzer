@@ -10,11 +10,12 @@ def load_models():
         vectorizer = joblib.load('data/vectorizer.pkl')
         kmeans = joblib.load('data/kmeans.pkl')
         rf_model = joblib.load('data/rf_model.pkl')
-        return vectorizer, kmeans, rf_model
+        df = pd.read_csv('data/youtube_dataset.csv')
+        return vectorizer, kmeans, rf_model,df
     except FileNotFoundError:
         return None, None, None
 
-vectorizer, kmeans, rf_model = load_models()
+vectorizer, kmeans, rf_model,df = load_models()
 
 def clean_text(text):
     text = str(text).lower()
