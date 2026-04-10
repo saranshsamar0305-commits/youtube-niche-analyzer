@@ -1,0 +1,14 @@
+[theme]
+# A strong, bold royal blue for interactive elements
+primaryColor = "#1D4ED8" 
+
+# A clear, soft ocean blue for the main background
+backgroundColor = "#DBEAFE"
+
+# A slightly deeper blue for the sidebar to create visual separation
+secondaryBackgroundColor = "#BFDBFE"
+
+# Dark navy text for perfect readability against the blue
+textColor = "#0F172A"
+
+font = "sans serif"
